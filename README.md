@@ -47,7 +47,6 @@ A practical example for applying NgRx in a more realistic application scenario, 
 * RxJS
 * Signals
 * Tailwind CSS
-* PrimeNG
 
 ## Building
 
