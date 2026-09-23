@@ -1,0 +1,43 @@
+<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+
+  <div class="mt-6 flex justify-center">
+    <nav
+      class="inline-flex items-center gap-1 rounded-xl border border-slate-300 bg-slate-200 p-1.5"
+    >
+
+      <!-- Products -->
+      <a
+        routerLink="products"
+        routerLinkActive="bg-white text-blue-600 shadow-sm"
+        [routerLinkActiveOptions]="{ exact: true }"
+        class="flex items-center gap-2 rounded-lg px-5 py-2.5 text-sm font-medium text-slate-600 transition-all duration-200 hover:text-slate-900"
+      >
+        <i class="pi pi-box text-sm"></i>
+        <span>Products</span>
+      </a>
+
+      <!-- Cart -->
+      <a
+        routerLink="cart"
+        routerLinkActive="bg-white text-blue-600 shadow-sm"
+        class="flex items-center gap-2 rounded-lg px-5 py-2.5 text-sm font-medium text-slate-600 transition-all duration-200 hover:text-slate-900"
+      >
+        <i class="pi pi-shopping-cart text-sm"></i>
+
+        <span>Cart</span>
+
+        <span
+          class="flex h-5 min-w-5 items-center justify-center rounded-full bg-blue-600 px-1.5 text-[10px] font-bold text-white"
+        >
+        {{cartLength$|async}}
+        </span>
+      </a>
+
+    </nav>
+  </div>
+
+  <main class="mt-8">
+    <router-outlet />
+  </main>
+
+</div>
