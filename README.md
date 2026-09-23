@@ -1,5 +1,7 @@
 # NGRX
 
+A practical Angular project focused on learning and applying **NgRx state management** through different application scenarios, including a Counter and a Mini E-Commerce application.
+
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 22.1.8.
 
 ## Development server
@@ -12,33 +14,54 @@ ng serve
 
 Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
-## Code scaffolding
+## Project Overview
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+This project is built to practice state management using NgRx in Angular.
 
-```bash
-ng generate component component-name
-```
+### Counter
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+A simple example for understanding the fundamentals of NgRx, including:
 
-```bash
-ng generate --help
-```
+* Actions
+* Reducers
+* Store
+* Selectors
+* Dispatching actions
+* Selecting state
+
+### Mini E-Commerce
+
+A practical example for applying NgRx in a more realistic application scenario, including:
+
+* Product listing
+* Shopping cart
+* Add and remove products
+* Increase and decrease product quantity
+* Cart state management
+* Dynamic cart totals
+
+## Technologies
+
+* Angular 22
+* NgRx
+* RxJS
+* Signals
+* Tailwind CSS
+* PrimeNG
 
 ## Building
 
-To build the project run:
+To build the project, run:
 
 ```bash
 ng build
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+This will compile the project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
 
 ## Running unit tests
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+To execute unit tests with the Vitest test runner, use:
 
 ```bash
 ng test
@@ -46,7 +69,7 @@ ng test
 
 ## Running end-to-end tests
 
-For end-to-end (e2e) testing, run:
+For end-to-end testing, run:
 
 ```bash
 ng e2e
@@ -56,4 +79,6 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 
 ## Additional Resources
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+For more information on Angular, visit the [Angular Documentation](https://angular.dev/).
+
+For more information about NgRx, visit the [NgRx Documentation](https://ngrx.io/).
